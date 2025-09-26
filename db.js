@@ -2,10 +2,10 @@
 const menuItems = [
   {
     id: 1,
-    name: "O'sh",
+    name: "Osh",
     description: "An'anaviy o'zbek oshi, mol go'shti va sabzavotlar bilan tayyorlangan. Maxsus ziravorlar va piyoz bilan ta'mlangan.",
     price: 25000,
-    image: "https://images.pexels.com/photos/2205270/pexels-photo-2205270.jpeg",
+    image: "https://imageproxy.wolt.com/menu/menu-images/653a4b5356ad08d105f0a1b4/463f3fbe-6b7f-11ef-8c13-c65ba7d388e5_137d4aa1_8fe3_4e3c_a60b_5e97799bb6d6",
     category: 'food',
     rating: 4.9,
     cookTime: "30 daqiqa"
