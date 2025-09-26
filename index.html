@@ -15,11 +15,11 @@
 }
 
 body {
-  background: #f9fafb;
+  background: linear-gradient(135deg, white, black, gold);
   color: #1f2937;
   line-height: 1.6;
+  font-family: "Segoe UI", Arial, sans-serif;
 }
-
 /* Container */
 .container {
   width: 90%;
@@ -29,7 +29,7 @@ body {
 
 /* Header */
 .header {
-  background: #ef4444;
+  background: linear-gradient(90deg, black, gold);
   color: #fff;
   padding: 1rem 0;
 }
@@ -62,24 +62,26 @@ body {
 }
 
 /* Hero section */
+
 .hero {
-  background: linear-gradient(135deg, #ef4444, #dc2626);
+  background: linear-gradient(135deg, black, gold, white);
   color: #fff;
   text-align: center;
   padding: 3rem 1rem;
   border-radius: 0 0 30px 30px;
 }
 
+.hero-title .gradient-text {
+  background: linear-gradient(90deg, white, gold, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .hero-title {
   font-size: 2rem;
   font-weight: bold;
 }
 
-.hero-title .gradient-text {
-  background: linear-gradient(90deg, #facc15, #f87171);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 
 .hero-description {
   margin-top: 0.5rem;
@@ -100,9 +102,9 @@ body {
 
 .category-buttons button {
   padding: 0.5rem 1rem;
-  border: 1px solid #ef4444;
+  border: 1px solid gold;
   background: #fff;
-  color: #ef4444;
+  color: black;
   font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
@@ -111,8 +113,8 @@ body {
 
 .category-buttons button.active,
 .category-buttons button:hover {
-  background: #ef4444;
-  color: #fff;
+  background: gold;
+  color: black;
 }
 
 /* Menu grid */
@@ -133,6 +135,12 @@ body {
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-item-price {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: gold;
 }
 
 .menu-item:hover {
@@ -156,11 +164,7 @@ body {
   color: #1f2937;
 }
 
-.menu-item-price {
-  margin-top: 0.5rem;
-  font-weight: bold;
-  color: #ef4444;
-}
+
 
 /* Modal umumiy */
 .modal-header h3 {
@@ -178,17 +182,17 @@ body {
   gap: 1rem;
 }
 
-.quantity-btn {
-  background: #ef4444;
-  color: #fff;
-  border: none;
-  width: 32px;
-  height: 32px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1.2rem;
+.quantity-btn,
+.order-btn {
+  background: gold;
+  color: black;
+  font-weight: bold;
 }
 
+.order-btn:hover:not(:disabled) {
+  background: black;
+  color: gold;
+}
 .quantity-display {
   font-size: 1.1rem;
   font-weight: bold;
@@ -236,9 +240,7 @@ body {
   cursor: not-allowed;
 }
 
-.order-btn:hover:not(:disabled) {
-  background: #dc2626;
-}
+
 
 .disclaimer {
   margin-top: 0.75rem;
